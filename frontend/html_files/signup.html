@@ -1,0 +1,53 @@
+<!-- signUp.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css_files/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            minlength="3"
+            required
+          />
+
+          <label for="phoneNo">Phone Number:</label>
+          <input
+            type="tel"
+            id="phoneNo"
+            name="phoneNo"
+            pattern="[5-9][0-9]{9}"
+            title="Please enter a valid 10-digit phone number starting with 5 or greater"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="6"
+            required
+          />
+
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+      </div>
+    </div>
+    <script src="../javascript_files/signup.js"></script>
+  </body>
+</html>
